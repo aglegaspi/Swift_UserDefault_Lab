@@ -14,6 +14,11 @@
 		EC4C528F233A99A9006A6F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4C528D233A99A9006A6F75 /* LaunchScreen.storyboard */; };
 		EC4C529A233A99A9006A6F75 /* _1UserDefaults_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C5299233A99A9006A6F75 /* _1UserDefaults_LabTests.swift */; };
 		EC4C52A9233ABD5D006A6F75 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C52A8233ABD5D006A6F75 /* UserDefaultsWrapper.swift */; };
+		EC4C52AC233AE23C006A6F75 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C52AB233AE23C006A6F75 /* NetworkManager.swift */; };
+		EC4C52AF233AE4A8006A6F75 /* HoroscopeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C52AE233AE4A8006A6F75 /* HoroscopeAPIClient.swift */; };
+		EC4C52B1233AE4BC006A6F75 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C52B0233AE4BC006A6F75 /* Horoscope.swift */; };
+		EC4C52B3233AE5AE006A6F75 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C52B2233AE5AE006A6F75 /* AppError.swift */; };
+		EC4C52B7233AEDC1006A6F75 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C52B6233AEDC1006A6F75 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		EC4C5299233A99A9006A6F75 /* _1UserDefaults_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1UserDefaults_LabTests.swift; sourceTree = "<group>"; };
 		EC4C529B233A99A9006A6F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4C52A8233ABD5D006A6F75 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		EC4C52AB233AE23C006A6F75 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EC4C52AE233AE4A8006A6F75 /* HoroscopeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeAPIClient.swift; sourceTree = "<group>"; };
+		EC4C52B0233AE4BC006A6F75 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		EC4C52B2233AE5AE006A6F75 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		EC4C52B6233AEDC1006A6F75 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 				EC4C52A4233A99B9006A6F75 /* Supporting Files */,
 				EC4C52A5233A99C4006A6F75 /* Controllers */,
 				EC4C5288233A99A6006A6F75 /* Main.storyboard */,
+				EC4C52AD233AE241006A6F75 /* Networking */,
 				EC4C52AA233AC741006A6F75 /* Models */,
 				EC4C528B233A99A9006A6F75 /* Assets.xcassets */,
 				EC4C5290233A99A9006A6F75 /* Info.plist */,
@@ -110,6 +121,7 @@
 		EC4C52A5233A99C4006A6F75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EC4C52B6233AEDC1006A6F75 /* DetailViewController.swift */,
 				EC4C5286233A99A6006A6F75 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -119,8 +131,19 @@
 			isa = PBXGroup;
 			children = (
 				EC4C52A8233ABD5D006A6F75 /* UserDefaultsWrapper.swift */,
+				EC4C52B0233AE4BC006A6F75 /* Horoscope.swift */,
+				EC4C52B2233AE5AE006A6F75 /* AppError.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EC4C52AD233AE241006A6F75 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EC4C52AB233AE23C006A6F75 /* NetworkManager.swift */,
+				EC4C52AE233AE4A8006A6F75 /* HoroscopeAPIClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4C52AC233AE23C006A6F75 /* NetworkManager.swift in Sources */,
+				EC4C52AF233AE4A8006A6F75 /* HoroscopeAPIClient.swift in Sources */,
+				EC4C52B1233AE4BC006A6F75 /* Horoscope.swift in Sources */,
 				EC4C5287233A99A6006A6F75 /* ViewController.swift in Sources */,
 				EC4C52A9233ABD5D006A6F75 /* UserDefaultsWrapper.swift in Sources */,
 				EC4C5285233A99A6006A6F75 /* AppDelegate.swift in Sources */,
+				EC4C52B3233AE5AE006A6F75 /* AppError.swift in Sources */,
+				EC4C52B7233AEDC1006A6F75 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

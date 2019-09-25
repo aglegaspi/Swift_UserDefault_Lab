@@ -13,15 +13,15 @@ class UserDefaultsWrapper {
     static let manager = UserDefaultsWrapper()
     
     // MARK: - Internal Methods
-    func store(horoscope: String) {
-        UserDefaults.standard.set(horoscope, forKey: horoscopeKey)
+    func store(sunSign: String) {
+        UserDefaults.standard.set(sunSign, forKey: sunSignKey)
     }
     
-    func getHoroscope() -> String? {
-        return UserDefaults.standard.value(forKey: horoscopeKey) as? String
+    func getSunSign() -> String? {
+        return UserDefaults.standard.value(forKey: sunSignKey) as? String
     }
     
     // MARK: - Private inits and properties
     private init() {}
-    private let horoscopeKey = "horoscope"
+    private let sunSignKey = "sunSign"
 }
